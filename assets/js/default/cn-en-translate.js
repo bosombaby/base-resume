@@ -3,7 +3,7 @@ $(document).ready(function () {
     var defaultLang = "cn";
     $("[i18n]").i18n({
         defaultLang: defaultLang,
-        filePath: "../assets/i18n/",//路径配置
+        filePath: "../../assets/i18n/",//路径配置
         filePrefix: "i18n_",
         fileSuffix: "",
         forever: true,
@@ -17,11 +17,11 @@ $(document).ready(function () {
         var b = a == "cn" ? "中/En" : "En/中";
         $(e.target).val(a);
         $("#nav__translate").text(b);
-        // console.log($(e.target).val());
+        console.log($(e.target).val());
 
         $("[i18n]").i18n({
             defaultLang: a,
-            filePath: "../assets/i18n/",
+            filePath: "../../assets/i18n/",
         });
 
     });

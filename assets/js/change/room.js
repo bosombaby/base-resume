@@ -131,7 +131,7 @@ let init = () => {
     renderer.outputEncoding = THREE.sRGBEncoding
     renderer.toneMapping = THREE.ACESFilmicToneMapping
 
-    // debugUI()
+
 
     //控制器
     controls = new OrbitControls(camera, renderer.domElement)
@@ -220,7 +220,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 let gsapTheme = () => {
     if (getCurrentTheme() === 'light') {
-        gsap.to(ambientLight, { intensity: 1.8 })
+        gsap.to(ambientLight, { intensity: 2.5 })
         gsap.to(ambientLight.color, {
             ...ambientLightColor,
             duration: durationTime
@@ -234,7 +234,7 @@ let gsapTheme = () => {
             duration: durationTime
         })
         gsap.to(sunLight, { intensity: 0, duration: durationTime })
-        gsap.to(spotLight, { intensity: 10, duration: durationTime })
+        gsap.to(spotLight, { intensity: 3.5, duration: durationTime })
 
     }
 }
@@ -283,4 +283,5 @@ let animate = () => {
 init()
 loadModel()
 changeTheme()
+// debugUI()
 animate()
