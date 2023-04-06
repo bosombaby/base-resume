@@ -538,10 +538,14 @@ img {
 }
 
 .skills__js{
-  width: 30%;
+  width: 70%;
 }
 
 .skills__vue{
+  width: 50%;
+}
+
+.skills__node{
   width: 50%;
 }
 
