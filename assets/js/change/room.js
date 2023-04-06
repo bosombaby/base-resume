@@ -214,7 +214,7 @@ let durationTime = 2
 /*==================== DARK LIGHT THEME & LANGUAGE====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const iconTheme = 'uil-moon'
 
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
@@ -245,27 +245,31 @@ let changeTheme = () => {
     const selectedTheme = localStorage.getItem('selected-theme')
     const selectedIcon = localStorage.getItem('selected-icon')
 
-    // We obtain the current theme that the interface has by validating the dark-theme class
 
+    // // We validate if the user previously chose a topic
+    // if (selectedTheme) {
+    //     // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    //     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    //     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 
-    // We validate if the user previously chose a topic
-    if (selectedTheme) {
-        // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-        themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-
-        gsapTheme()
-    }
+    //     gsapTheme()
+    // }
 
 
     // Activate / deactivate the theme manually with the button
     themeButton.addEventListener('click', () => {
         // Add or remove the dark / icon theme
         document.body.classList.toggle(darkTheme)
-        themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
-        localStorage.setItem('selected-theme', getCurrentTheme())
-        localStorage.setItem('selected-icon', getCurrentIcon())
+        if (getCurrentIcon() === 'uil-sun') {
+            themeButton.classList.remove('uil-sun')
+            themeButton.classList.add('uil-moon')
+        } else {
+            themeButton.classList.remove('uil-moon')
+            themeButton.classList.add('uil-sun')
+
+        }
+        // localStorage.setItem('selected-theme', getCurrentTheme())
+        // localStorage.setItem('selected-icon', getCurrentIcon())
 
         gsapTheme()
 

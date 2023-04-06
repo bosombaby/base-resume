@@ -17,7 +17,7 @@ $(document).ready(function () {
         var b = a == "cn" ? "中/En" : "En/中";
         $(e.target).val(a);
         $("#nav__translate").text(b);
-        console.log($(e.target).val());
+        // console.log($(e.target).val());
 
         $("[i18n]").i18n({
             defaultLang: a,

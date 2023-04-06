@@ -545,7 +545,7 @@ img {
   width: 50%;
 }
 
-.skills__node{
+.skills__vue{
   width: 50%;
 }
 
@@ -935,7 +935,10 @@ img {
       text-align: center;
   }
 }
-
+  .webgl{
+      width: 548px;
+      height: 340px;
+  }
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content {
@@ -949,9 +952,8 @@ img {
       justify-self: center;
   }
   .webgl{
-      width: 548px;
-      height: 340px;
-  }
+        max-width: 400px;
+    }
 
   .about__container,
   .skills_container,
