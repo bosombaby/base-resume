@@ -530,7 +530,7 @@ img {
 }
 
 .skills__html {
-  width: 60%;
+  width: 80%;
 }
 
 .skills__css{
@@ -548,13 +548,25 @@ img {
 .skills__vue{
   width: 50%;
 }
-
-.skills__java{
+.skills__three{
   width: 70%;
+}
+.skills__webgl{
+  width: 20%;
+}
+.skills__cesium{
+  width: 50%;
+}
+
+.skills__node{
+  width: 60%;
+}
+.skills__java{
+  width: 20%;
 }
 
 .skills__python{
-  width: 50%;
+  width: 30%;
 }
 
 .skills__close .skills__list {
@@ -952,7 +964,7 @@ img {
       justify-self: center;
   }
   .webgl{
-        max-width: 400px;
+        max-width: 420px;
     }
 
   .about__container,

@@ -140,7 +140,7 @@ let init = () => {
     controls.enablePan = false
 
     controls.minPolarAngle = Math.PI / 6
-    controls.maxPolarAngle = Math.PI / 3
+    controls.maxPolarAngle = Math.PI / 4
 
     controls.minAzimuthAngle = -Math.PI / 6
     controls.maxAzimuthAngle = Math.PI / 2
@@ -158,6 +158,8 @@ let setScreenVideo = () => {
     video.loop = true
     video.play()
     const videoTexture = new THREE.VideoTexture(video)
+    videoTexture.minFilter = THREE.NearestFilter
+    videoTexture.magFilter = THREE.NearestFilter
 
     // 添加真实性渲染，后面改
     screen.material = new THREE.MeshBasicMaterial({
