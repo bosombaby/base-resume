@@ -1,607 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--==================== UNICONS 图标====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!--==================== UNICONS 图标====================-->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
-  <!--==================== SWIPER CSS ====================-->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-  <!--==================== CSS ====================-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <!-- iconfont font class 方式引用图标 -->
-  <!-- <link
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- iconfont font class 方式引用图标 -->
+    <!-- <link
       rel="stylesheet"
       href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
     /> -->
 
-  <title>个人技术介绍网站</title>
-</head>
+    <title>个人技术介绍网站</title>
+  </head>
 
-<body>
-  <!--==================== HEADER ====================-->
-  <header class="header scroll-header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">bosom</a>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">bosom</a>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">
-              <i class="uil uil-estate nav__icon"></i>
-              <p i18n="home">主页</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="uil uil-user nav__icon"></i>
-              <p i18n="about">关于</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="uil uil-file-alt nav__icon"></i>
-              <p i18n="skills">技能</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
-              <i class="uil uil-scenery nav__icon"></i>
-              <p i18n="portfolio">项目集</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class="uil uil-message nav__icon"></i>
-              <p i18n="contact">联系方式</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <div class="nav__link" id="translate" value="en">
-              <svg class="icon nav__icon-svg" aria-hidden="true">
-                <use xlink:href="#icon-fanyi"></use>
-              </svg>
-              <a class="=nav__link" id="nav__translate">Translate</a>
-            </div>
-          </li>
-        </ul>
-        <i class="uil uil-times nav__close" id="nav-close"></i>
-      </div>
-
-      <div class="nav__btns">
-        <i class="uil uil-sun change-theme" id="theme-button"></i>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="uil uil-apps"></i>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p i18n="home">主页</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                <p i18n="about">关于</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p i18n="skills">技能</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p i18n="portfolio">项目集</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p i18n="contact">联系方式</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <div class="nav__link" id="translate" value="en">
+                <svg class="icon nav__icon-svg" aria-hidden="true">
+                  <use xlink:href="#icon-fanyi"></use>
+                </svg>
+                <a class="=nav__link" id="nav__translate">Translate</a>
+              </div>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <!--==================== MAIN ====================-->
-  <main class="main">
-    <!--==================== HOME ====================-->
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__content grid">
-          <div class="home__social">
-            <a href="http://101.132.190.14/" target="_blank" class="home__social-icon">
+        <div class="nav__btns">
+          <i class="uil uil-sun change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="http://101.132.190.14/" target="_blank" class="home__social-icon">
+                <i class="uil uil-estate"></i>
+              </a>
+              <a href="https://github.com/bosombaby/base-resume" target="_blank" class="home__social-icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a href="https://blog.csdn.net/qq_53673551" target="_blank" class="home__social-icon">
+                <i class="uil uil-user"></i>
+              </a>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title" i18n="home__title">持续学习</h1>
+              <h3 class="home__subtitle" i18n="home__subtitle">前端工程师</h3>
+              <p class="home__description" i18n="home__description">热爱学习，热爱生活，不断追求创新、探索新技术</p>
+              <a href="#contact" class="button button-flex">
+                <span i18n="home__contact">与我联系</span>
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+            <div class="home_model">
+              <canvas class="webgl"></canvas>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+              <span class="home__scroll-name" i18n="home__scroll-name">往下滑</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title" i18n="about__title">关于我</h2>
+        <span class="section__subtitle" i18n="about__subtitle">简单介绍</span>
+        <div class="about__container container grid">
+          <img src="assets/img/about.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description" i18n="about__description"></p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">00+</span>
+                <span class="about__info-name" i18n="about__info-name1">年工作<br />经验</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">2+</span>
+                <span class="about__info-name" i18n="about__info-name2">完整<br />项目</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">00+</span>
+                <span class="about__info-name" i18n="about__info-name3"
+                  >公司 <br />
+                  任职</span
+                >
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a download="" href="assets/pdf/简历.pdf" class="button button--flex">
+                <span i18n="download">查看简历</span><i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title" i18n="skills__title">技能</h2>
+        <span class="section__subtitle" i18n="skills__subtitle">技术水平"</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1 ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="home__subtitle">前端工程师</h1>
+                  <span class="skills__subtitle" i18n="skills__years">1 年开发经验</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__html"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__css"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__js"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VUE</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__vue"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">THREE.JS</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__three"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">WebGL</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__webgl"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Cesium</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__cesium"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__node"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="skills__title2">后端开发</h1>
+                  <span class="skills__subtitle" i18n="skills__years2">1 年开发经验</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__java"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__python"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title" i18n="qualification__title">经历</h2>
+        <span class="section__subtitle" i18n="qualification__subtitle">个人履历</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              <span i18n="education">教育</span>
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              <span i18n="work">工作</span>
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification1__title">计算机科学与技术</h3>
+                  <span class="qualification__subtitle" i18n="qualification1__subtitle">江苏海洋大学大学</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 至今
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title" i18n="qualification2__title">3D渲染</h3>
+                  <span class="qualification__subtitle" i18n="qualification2__subtitle">vrteam</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021.12 - 至今
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification3__title">前端开发</h3>
+                  <span class="qualification__subtitle" i18n="qualification3__subtitle">bilibili</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022.12 - 至今
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification__title" i18n="qualification4__title">经历</h3>
+                  <span class="qualification__subtitle" i18n="qualification4__subtitle">江苏</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title" i18n="portfolio__title">项目集</h2>
+        <span class="section__subtitle" i18n="portfolio__subtitle">近期项目</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio1.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio1__title">实验室官网</h3>
+                <p class="portfolio__description" i18n="portfolio1__description">
+                  网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
+                </p>
+                <a
+                  href="http://101.132.190.14/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  view
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio2.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio2__title">作品展示平台</h3>
+                <p class="portfolio__description" i18n="portfolio2__description">
+                  网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
+                </p>
+                <a
+                  href="https://product.vrteam.top/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  view
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio3.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio3__title">三维数字化管理中心</h3>
+                <p class="portfolio__description" i18n="portfolio3__description">
+                  网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
+                </p>
+                <a
+                  href="http://101.132.190.14/3d-digital-center/d3/#/dashboard"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  view
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- add arrows-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" i18n="contact__title">Contact me</h2>
+        <span class="section__subtitle" i18n="contact__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-hipchat contact__icon"></i>
+              <div>
+                <h3 class="contact__title" i18n="wechat">微信</h3>
+                <span class="contact__subtitle" i18n="wechat__account">mzhw568</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="email">电子邮箱</h3>
+                <span class="contact__subtitle" i18n="email__address">1245924849@qq.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="location">位置</h3>
+                <span class="contact__subtitle" i18n="location__detail">江苏省 - 连云港市</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">bosom</h1>
+            <span class="footer__subtitle" i18n="home__subtitle">Frontend developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#skills" class="footer__link" i18n="skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link" i18n="portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link" i18n="contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="http://101.132.190.14/" target="_blank" class="icon footer__social">
               <i class="uil uil-estate"></i>
             </a>
-            <a href="https://github.com/bosombaby/base-resume" target="_blank" class="home__social-icon">
+            <a href="https://github.com/bosombaby/base-resume" target="_blank" class="icon footer__social">
               <i class="uil uil-github-alt"></i>
             </a>
-            <a href="https://blog.csdn.net/qq_53673551" target="_blank" class="home__social-icon">
+            <a href="https://blog.csdn.net/qq_53673551" target="_blank" class="icon footer__social">
               <i class="uil uil-user"></i>
             </a>
           </div>
-          <div class="home__data">
-            <h1 class="home__title" i18n="home__title">
-              持续学习
-            </h1>
-            <h3 class="home__subtitle" i18n="home__subtitle">
-              前端工程师
-            </h3>
-            <p class="home__description" i18n="home__description">
-              热爱学习，热爱生活，不断追求创新、探索新技术
-            </p>
-            <a href="#contact" class="button button-flex">
-              <span i18n="home__contact">与我联系</span>
-              <i class="uil uil-message button__icon"></i>
-            </a>
-          </div>
-          <div class="home_model">
-            <canvas class="webgl"></canvas>
-          </div>
         </div>
-        <div class="home__scroll">
-          <a href="#about" class="home__scroll-button button--flex">
-            <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-            <span class="home__scroll-name" i18n="home__scroll-name">往下滑</span>
-            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-          </a>
-        </div>
+
+        <p class="footer__copy">
+          &#169; bosom.Copy from
+          <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode</a>
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-      <h2 class="section__title" i18n="about__title">关于我</h2>
-      <span class="section__subtitle" i18n="about__subtitle">简单介绍</span>
-      <div class="about__container container grid">
-        <img src="assets/img/about.png" alt="" class="about__img" />
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/default/swiper-bundle.min.js"></script>
 
-        <div class="about__data">
-          <p class="about__description" i18n="about__description">
+    <!-- iconfont JS -->
+    <script src="assets/js/default/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/default/jquery.i18n.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/default/main.js"></script>
 
-          </p>
+    <!-- translate JS -->
+    <script src="assets/js/default/cn-en-translate.js"></script>
 
-          <div class="about__info">
-            <div>
-              <span class="about__info-title">00+</span>
-              <span class="about__info-name" i18n="about__info-name1">年工作<br />经验</span>
-            </div>
+    <!-- gsap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
-            <div>
-              <span class="about__info-title">2+</span>
-              <span class="about__info-name" i18n="about__info-name2">完整<br />项目</span>
-            </div>
-
-            <div>
-              <span class="about__info-title">00+</span>
-              <span class="about__info-name" i18n="about__info-name3">公司 <br /> 任职</span>
-            </div>
-          </div>
-
-          <div class="about__buttons">
-            <a download="" href="assets/pdf/简历.pdf" class="button button--flex">
-              <span i18n="download">查看简历</span><i class="uil uil-download-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SKILLS ====================-->
-    <section class="skills section" id="skills">
-      <h2 class="section__title" i18n="skills__title">技能</h2>
-      <span class="section__subtitle" i18n="skills__subtitle">技术水平"</span>
-
-      <div class="skills__container container grid">
-        <div>
-          <!--==================== SKILLS 1 ====================-->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-brackets-curly skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title" i18n="home__subtitle">
-                  前端工程师
-                </h1>
-                <span class="skills__subtitle" i18n="skills__years">1 年开发经验</span>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__html"></div>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__css"></div>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__js"></div>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">VUE</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__vue"></div>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">THREE.JS</h3>
-                  <span class="skills__number">70%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__three"></div>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">WebGL</h3>
-                  <span class="skills__number">20%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__webgl"></div>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Cesium</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__cesium"></div>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Node</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__node"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--==================== SKILLS 2 ====================-->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-server-network skills__icon"></i>
-
-              <div>
-                <h1 class="skills__title" i18n="skills__title2">
-                  后端开发
-                </h1>
-                <span class="skills__subtitle" i18n="skills__years2">1 年开发经验</span>
-              </div>
-
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Java</h3>
-                  <span class="skills__number">20%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__java"></div>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Python</h3>
-                  <span class="skills__number">30%</span>
-                </div>
-                <div class="skills__bar">
-                  <div class="skills__percentage skills__python"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== QUALIFICATION ====================-->
-    <section class="qualification section">
-      <h2 class="section__title" i18n="qualification__title">
-        经历
-      </h2>
-      <span class="section__subtitle" i18n="qualification__subtitle">个人履历</span>
-      <div class="qualification__container container">
-        <div class="qualification__tabs">
-          <div class="qualification__button button--flex qualification__active" data-target="#education">
-            <i class="uil uil-graduation-cap qualification__icon"></i>
-            <span i18n="education">教育</span>
-          </div>
-
-          <div class="qualification__button button--flex" data-target="#work">
-            <i class="uil uil-briefcase-alt qualification__icon"></i>
-            <span i18n="work">工作</span>
-          </div>
-        </div>
-        <div class="qualification__sections">
-          <!--==================== QUALIFICATION CONTENT 1 ====================-->
-          <div class="qualification__content qualification__active" data-content id="education">
-            <!--==================== QUALIFICATION 1 ====================-->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title" i18n="qualification1__title">
-                  计算机科学与技术
-                </h3>
-                <span class="qualification__subtitle" i18n="qualification1__subtitle">江苏海洋大学大学</span>
-                <div class="qualification__calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2020 - 至今
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-            </div>
-            <!--==================== QUALIFICATION 2 ====================-->
-            <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 class="qualification__title" i18n="qualification2__title">
-                  3D渲染
-                </h3>
-                <span class="qualification__subtitle" i18n="qualification2__subtitle">vrteam</span>
-                <div class="qualification__calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2021.12 - 至今
-                </div>
-              </div>
-            </div>
-            <!--==================== QUALIFICATION 3 ====================-->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title" i18n="qualification3__title">
-                  前端开发
-                </h3>
-                <span class="qualification__subtitle" i18n="qualification3__subtitle">bilibili</span>
-                <div class="qualification__calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2022.12 - 至今
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
-              </div>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION CONTENT 2 ====================-->
-          <div class="qualification__content" data-content id="work">
-            <!--==================== QUALIFICATION 1 ====================-->
-            <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
-              </div>
-              <div>
-                <h3 class="qualification__title" i18n="qualification4__title">
-                  经历
-                </h3>
-                <span class="qualification__subtitle" i18n="qualification4__subtitle">江苏</span>
-                <div class="qualification__calendar">
-                  <i class="uil uil-calendar-alt"></i>
-                  2023
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section" id="portfolio">
-      <h2 class="section__title" i18n="portfolio__title">项目集</h2>
-      <span class="section__subtitle" i18n="portfolio__subtitle">近期项目</span>
-
-      <div class="portfolio__container container swiper-container">
-        <div class="swiper-wrapper">
-          <!--==================== PORTFOLIO 1 ====================-->
-
-          <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/product/portfolio1.png" alt="" class="portfolio__img" />
-
-            <div class="portfolio_">
-              <h3 class="portfolio__title" i18n="portfolio1__title">
-                实验室官网
-              </h3>
-              <p class="portfolio__description" i18n="portfolio1__description">
-                网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
-              </p>
-              <a href="http://101.132.190.14/" target="_blank"
-                class="button button--flex button--small portfolio__button">
-                view
-                <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!--==================== PORTFOLIO 2 ====================-->
-
-          <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/product/portfolio2.png" alt="" class="portfolio__img" />
-
-            <div class="portfolio_">
-              <h3 class="portfolio__title" i18n="portfolio2__title">
-                作品展示平台
-              </h3>
-              <p class="portfolio__description" i18n="portfolio2__description">
-                网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
-              </p>
-              <a href="https://product.vrteam.top/" target="_blank"
-                class="button button--flex button--small portfolio__button">
-                view
-                <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!--==================== PORTFOLIO 3 ====================-->
-
-          <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/product/portfolio3.png" alt="" class="portfolio__img" />
-
-            <div class="portfolio_">
-              <h3 class="portfolio__title" i18n="portfolio3__title">
-                三维数字化管理中心
-              </h3>
-              <p class="portfolio__description" i18n="portfolio3__description">
-                网站采用响应式布局，适配于多种设备，具有UI组件和动画交互。
-              </p>
-              <a href="http://101.132.190.14/3d-digital-center/d3/#/dashboard" target="_blank"
-                class="button button--flex button--small portfolio__button">
-                view
-                <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- add arrows-->
-        <div class="swiper-button-next">
-          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-        </div>
-
-        <div class="swiper-button-prev">
-          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-        </div>
-
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <!--==================== CONTACT ME ====================-->
-    <section class="contact section" id="contact">
-      <h2 class="section__title" i18n="contact__title">Contact me</h2>
-      <span class="section__subtitle" i18n="contact__subtitle">Get in touch</span>
-
-      <div class="contact__container container grid">
-        <div>
-          <div class="contact__information">
-            <i class="uil uil-hipchat contact__icon"></i>
-            <div>
-              <h3 class="contact__title" i18n="wechat">微信</h3>
-              <span class="contact__subtitle" i18n="wechat__account">mzhw568</span>
-            </div>
-          </div>
-
-          <div class="contact__information">
-            <i class="uil uil-envelope contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title" i18n="email">电子邮箱</h3>
-              <span class="contact__subtitle" i18n="email__address">1245924849@qq.com</span>
-            </div>
-          </div>
-
-          <div class="contact__information">
-            <i class="uil uil-map-marker contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title" i18n="location">位置</h3>
-              <span class="contact__subtitle" i18n="location__detail">江苏省 - 连云港市</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <div class="footer__bg">
-      <div class="footer__container container grid">
-        <div>
-          <h1 class="footer__title">bosom</h1>
-          <span class="footer__subtitle" i18n="home__subtitle">Frontend developer</span>
-        </div>
-
-        <ul class="footer__links">
-          <li>
-            <a href="#skills" class="footer__link" i18n="skills">Skills</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="footer__link" i18n="portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact" class="footer__link" i18n="contact">Contact</a>
-          </li>
-        </ul>
-
-        <div class="footer__socials">
-          <a href="http://101.132.190.14/" target="_blank" class="icon footer__social">
-            <i class="uil uil-estate"></i>
-          </a>
-          <a href="https://github.com/bosombaby/base-resume" target="_blank" class="icon footer__social">
-            <i class="uil uil-github-alt"></i>
-          </a>
-          <a href="https://blog.csdn.net/qq_53673551" target="_blank" class="icon footer__social">
-            <i class="uil uil-user"></i>
-          </a>
-
-        </div>
-      </div>
-
-      <p class="footer__copy">
-        &#169; bosom.Copy from
-        <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode</a>
-      </p>
-    </div>
-  </footer>
-
-  <!--==================== SCROLL TOP ====================-->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-  </a>
-  <!--==================== SWIPER JS ====================-->
-  <script src="assets/js/default/swiper-bundle.min.js"></script>
-
-  <!-- iconfont JS -->
-  <script src="assets/js/default/iconfont.js"></script>
-  <!-- jquery -->
-  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="assets/js/default/jquery.i18n.min.js"></script>
-  <!--==================== MAIN JS ====================-->
-  <script src="assets/js/default/main.js"></script>
-
-  <!-- translate JS -->
-  <script src="assets/js/default/cn-en-translate.js"></script>
-
-  <!-- gsap JS -->
-  <script src="https://cdn.bootcdn.net/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-
-  <!-- module模块化 -->
-  <script type="importmap">
-        {
-            "imports":{
-                "three":"./assets/js/three/build/three.module.js",
-                "three/examples/jsm/":"./assets/js/three/jsm/"
-            }
+    <!-- module模块化 -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./assets/js/three/build/three.module.js",
+          "three/examples/jsm/": "./assets/js/three/jsm/"
         }
-  </script>
+      }
+    </script>
 
-  <!-- MyRoom JS -->
-  <script type="module" src="assets/js/change/room.js"></script>
-</body>
-
+    <!-- MyRoom JS -->
+    <script type="module" src="assets/js/change/room.js"></script>
+  </body>
 </html>
